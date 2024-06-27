@@ -1,0 +1,132 @@
+/* CSS Reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global variables */
+
+:root {
+    --color-primary: hsl(75, 94%, 57%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey: hsl(0, 0%, 20%);
+    --color-dark-grey: hsl(0, 0%, 12%);
+    --color-black: hsl(0, 0%, 8%);
+}
+
+/* Element styles */
+
+body {
+    font-family: "inter", sans-serif;
+    line-height: 1.5;
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* Component styles */
+
+/* Header */
+.header-title {
+    text-align: center;
+    padding: 30px;
+}
+
+/* Card component */
+.card {
+    background: var(--color-dark-grey);
+    margin: 0 15px;
+    border-radius: 8px;
+}
+
+.card__content {
+    padding: 24px;
+    text-align: center;
+}
+
+.card__picture {
+    height: 88px;
+    width: 88px;
+    margin: 0 auto;
+}
+
+.card__personal-information {
+    margin-top: 24px;
+}
+
+.card__name {
+    font-size: 24px;
+}
+
+.card__location {
+    font-size: 14px;
+    color: var(--color-primary);
+}
+
+.card__message {
+    margin-top: 24px;
+    font-size: 14px;
+}
+
+.card_social-media-links {
+    margin-top: 24px;
+    a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 45px;
+        margin-top: 16px;
+        background: var(--color-grey);
+        border-radius: 8px;
+        text-decoration: none;
+        color: var(--color-white);
+        font-size: 14px;
+    }
+}
+
+/* Attribution */
+.attribution {
+    text-align: center;
+    padding: 30px;
+
+    a {
+        color: var(--color-primary);
+    }
+}
+
+/* Media queries */
+@media (max-width: 375px) {
+    .card {
+        width: 327px;
+    }
+}
+
+@media (min-width: 376px) {
+    .card {
+        width: 384px;
+    }
+
+    .card__content {
+        padding: 40px;
+    }
+
+    .card_social-media-links {
+        a:hover {
+            background-color: var(--color-primary);
+            color: var(--color-black);
+        }
+    }
+}
