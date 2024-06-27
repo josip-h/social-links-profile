@@ -87,7 +87,7 @@ img {
     font-size: 14px;
 }
 
-.card_social-media-links {
+.card__social-media-links {
     margin-top: 24px;
     a {
         display: flex;
@@ -121,9 +121,9 @@ img {
     }
 }
 
-@media (min-width: 376px) {
+@media (min-width: 420px) {
     .card {
-        max-width: 384px;
+        width: 384px;
     }
 
     .card__content {
