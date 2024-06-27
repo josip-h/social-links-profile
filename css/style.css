@@ -31,9 +31,11 @@ body {
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
 }
 
 img {
@@ -115,13 +117,13 @@ img {
 /* Media queries */
 @media (max-width: 375px) {
     .card {
-        width: 327px;
+        max-width: 327px;
     }
 }
 
 @media (min-width: 376px) {
     .card {
-        width: 384px;
+        max-width: 384px;
     }
 
     .card__content {
